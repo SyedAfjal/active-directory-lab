@@ -21,8 +21,8 @@ This project is designed to showcase my skills in **Active Directory**, **networ
 
 ### Tasks
 
-<####details>
-  <summary>VirtualBox Setup</summary>
+<details>
+  <summary>**VirtualBox Setup**</summary>
 
   Here, I will walk you through the process of setting up VirtualBox
 
