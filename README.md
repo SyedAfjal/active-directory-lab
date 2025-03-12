@@ -16,3 +16,15 @@ As shown in the diagram, this project simulates a **Windows network environment*
 
 This project is designed to showcase my skills in **Active Directory**, **network configuration**, and **Windows Server management**.
 
+
+---
+
+### Tasks
+
+<details>
+  <summary>VirtualBox Setup</summary>
+
+  Here, I will walk you through the process of setting up VirtualBox
+
+  </details>
+
