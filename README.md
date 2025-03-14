@@ -6,7 +6,7 @@
 
 As shown in the diagram, this project simulates a **Windows network environment** using **VirtualBox** to demonstrate how **Active Directory (AD)** works. The setup involves creating two virtual machines: one for the **Active Directory Server** (Domain Controller) and another for the **UserPC** (Windows 10). 
 
-### Project Goals:
+## Project Goals:
 - Create and configure a **Windows domain environment** using **Server 2019** and **Windows 10**.
 - Set up **Active Directory** on the AD Server and create a domain (**mytechdomain.local**).
 - Configure networking so the **UserPC** can access the internet through the **AD Server**.
@@ -19,8 +19,9 @@ This project is designed to showcase my skills in **Active Directory**, **networ
 
 ---
 
-### Tasks
+## Implementation Steps
 
+### VirtualBox Setup and Networking Configuration
 <details>
   <summary>VirtualBox Setup: Ethernet Configuration</summary>
   
