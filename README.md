@@ -22,9 +22,26 @@ This project is designed to showcase my skills in **Active Directory**, **networ
 ### Tasks
 
 <details>
-  <summary>**VirtualBox Setup**</summary>
+  <summary>VirtualBox Setup: Ethernet Configuration</summary>
+  
+  In this section, I demonstrate how I configured both Ethernet adapters for internal and external networking in VirtualBox. The external adapter connects to my college network for   internet access, while the internal adapter is used for communication between the Domain Controller and the UserPC.
 
-  Here, I will walk you through the process of setting up VirtualBox
+  #### Screenshot 1: VirtualBox Setup for AD Server
+  This screenshot shows how I configured the **AD Server** in VirtualBox. I have set the system specifications, including memory, boot order, and network adapters.
 
-  </details>
+  <img width="520" alt="Image" src="https://github.com/user-attachments/assets/b82a2ac5-af04-4342-a89a-6d2c150d31fa" />
+
+  #### Screenshot 2: Internal Ethernet Adapter Configuration
+  In this screenshot, you can see the configuration for the **internal Ethernet adapter**. The internal network is used to allow communication between the **AD Server** and the **UserPC**. Since this is a private network, it’s safe to leave the details as shown without blurring.
+
+  <img width="557" alt="Image" src="https://github.com/user-attachments/assets/2a7a9406-effe-48ad-9e7f-08e9496c8c14" />
+
+  #### Screenshot 3: External Ethernet Adapter Configuration
+  This screenshot shows the configuration for the **external Ethernet adapter**. The external adapter connects the **AD Server** to my home network, which allows internet access for the **UserPC**. Please note that some information has been blurred for security reasons.
+
+  <img width="552" alt="Image" src="https://github.com/user-attachments/assets/ddd773cc-fd66-40cd-91d3-b7c4e96de6f8" />
+
+  *Note: The IP address in the screenshot has been blurred to maintain privacy and security.*
+</details>
+
 
