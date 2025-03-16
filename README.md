@@ -45,4 +45,34 @@ This project is designed to showcase my skills in **Active Directory**, **networ
   *Note: The IP address in the screenshot has been blurred to maintain privacy and security.*
 </details>
 
+---
+
+### Configuring Network Services: NAT and DHCP
+<details>
+  <summary>Setting Up NAT and DHCP for Network Communication</summary>
+
+  In this section, I demonstrate how I configured **NAT (Network Address Translation)** and **DHCP (Dynamic Host Configuration Protocol)** on the **AD Server** to allow the **UserPC** to access the internet and automatically receive an IP address.
+
+  #### Screenshot 1: Setting Up NAT for Internet Access
+  I configured NAT on the **AD Server** to allow the **UserPC** to access the internet. This setup ensures that the **UserPC** routes internet traffic through the **AD Server**.
+
+  <img width="318" alt="Image" src="https://github.com/user-attachments/assets/0d0cf1b9-e2e3-4809-83c0-54cee7a345c8" />
+
+  #### Screenshot 2: Creating a DHCP Scope
+  I set up a **DHCP scope** to define a range of IP addresses that can be assigned dynamically to clients within the network.
+
+  <img width="627" alt="Image" src="https://github.com/user-attachments/assets/a7ed0b87-6af7-438b-8b9e-34a9010382f2" />
+
+  #### Screenshot 3: Defining IP Address Range for DHCP
+  This configuration sets up the **IP address range** (192.168.1.100 - 192.168.1.200) that the DHCP server will use to assign addresses to connected devices.
+
+  <img width="632" alt="Image" src="https://github.com/user-attachments/assets/372d778b-f869-415f-8ecb-de983de68c43" />
+
+  #### Screenshot 4: Setting the Default Gateway
+  I configured the **default gateway (192.168.1.1)** so that all network traffic from the **UserPC** is properly routed through the **AD Server**.
+
+ <img width="626" alt="Image" src="https://github.com/user-attachments/assets/1003eb44-6bb4-4979-b367-d1529d9a554d" />
+
+  These steps successfully configure **NAT and DHCP** to ensure that the **UserPC** can connect to the **Active Directory** network and access the internet via the **AD Server**.
+</details>
 
