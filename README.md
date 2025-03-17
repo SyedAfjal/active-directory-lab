@@ -76,3 +76,37 @@ This project is designed to showcase my skills in **Active Directory**, **networ
   These steps successfully configure **NAT and DHCP** to ensure that the **UserPC** can connect to the **Active Directory** network and access the internet via the **AD Server**.
 </details>
 
+---
+
+### UserPC Integration into the Active Directory Domain
+<details>
+  <summary>Connecting UserPC to the AD Domain and Verifying Network Access</summary>
+
+  In this section, I set up a **Windows 10 VM (UserPC)** on VirtualBox and configured its network adapter to be **internal** so that it can only access the internet through the **AD Server**.
+
+  #### Screenshot 1: UserPC Obtains an IP Address via DHCP
+  After installing the Windows 10 VM, the **DHCP server** automatically assigned it an IP address from the configured scope.
+
+  <img width="601" alt="Image" src="https://github.com/user-attachments/assets/120b257d-484e-4d2d-95ea-e721a681fece" />
+
+  #### Screenshot 2: Adding UserPC to the AD Domain
+  I joined **UserPC** to the **mytechdomain.local** domain, allowing it to authenticate using Active Directory credentials.
+
+  <img width="400" alt="Image" src="https://github.com/user-attachments/assets/09a00f60-b2c2-4782-939c-22395fd9ea48" />
+
+  #### Screenshot 3: UserPC Appears in Active Directory
+  After adding **UserPC** to the domain, it is now listed as a recognized computer in **Active Directory Users and Computers**.
+
+  <img width="536" alt="Image" src="https://github.com/user-attachments/assets/f9466306-5e98-4e68-8798-d6280b983de6" />
+
+  #### Screenshot 4: Verifying Network Configuration and Internet Access
+  I created a **HelpDesk account** with administrative privileges and logged into **UserPC** using this account. Running the `ipconfig` command confirmed that **UserPC**:
+  - Received an IP address from the **DHCP scope**.
+  - Uses the **default gateway (192.168.1.1)** set up on the **AD Server**.
+  - Successfully pings `google.com`, verifying that it can access the internet through the **AD Server**.
+
+<img width="483" alt="Image" src="https://github.com/user-attachments/assets/9068612f-ccd2-479b-aae5-d381a32df6ec" />
+
+  This successfully achieves one of the primary project goals: ensuring that **UserPC** is in an internal network but can still reach the internet through the **AD Server**.
+</details>
+
