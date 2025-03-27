@@ -136,3 +136,52 @@ This project is designed to showcase my skills in **Active Directory**, **networ
 
   This scenario demonstrates how **Group Policy settings can enforce security**, and how **administrators can resolve common user issues** such as account lockouts through Active Directory tools.
 </details>
+
+<details>
+  <summary>Setting Up and Mapping Departmental & Personal Share Drives</summary>
+
+  #### Scenario:
+  Suppose Nicole recently joined the **Marketing Department**, and she needs access to two shared folders: one for personal use and another specific to her department. This scenario demonstrates how I configured shared folders using **Active Directory groups** and mapped them on her UserPC for easy access.
+
+  #### Screenshot 1: Creating the Marketing Share Folder
+  I used the **New Share Wizard** in Server Manager to create a folder named `Marketing` at the path `C:\Shares\Marketing`. I followed a similar process to create a `Personal` folder for individual access.
+
+  <img width="751" alt="Image" src="https://github.com/user-attachments/assets/270f0e8b-a31c-4f98-a909-a8ed7ee34439" />
+
+  #### Screenshot 2: Confirming Folder Creation
+  This screenshot shows both the `Marketing` and `Personal` folders under `C:\Shares\` confirming successful folder setup.
+
+  <img width="572" alt="Image" src="https://github.com/user-attachments/assets/d639d6ce-b7b3-4091-9ff1-24d6087275f5" />
+
+  #### Screenshot 3: Creating a Security Group for Marketing
+  Instead of assigning permissions to each user manually, I created a **Security Group named "Marketing"**, which simplifies permission management.
+
+  <img width="199" alt="Image" src="https://github.com/user-attachments/assets/0fb753f9-a089-4d89-956b-c7794bbfc9ac" />
+
+  #### Screenshot 4: Adding Nicole to Marketing Group
+  I added **Nicole** to the `Marketing` security group, giving her access to the shared department folder.
+
+  <img width="200" alt="Image" src="https://github.com/user-attachments/assets/e1ee6513-2d61-47ed-a3bd-45aad8a357ae" />
+
+  #### Screenshot 5: Nicole's Group Membership Overview
+  Nicole is now part of the `Marketing` and `Personal` security groups, which simplifies access control.
+
+ <img width="525" alt="Image" src="https://github.com/user-attachments/assets/8b799f5b-94ff-48f6-b106-60d868c983d7" />
+
+  #### Screenshot 6: Setting Share Permissions
+  I applied folder-level permissions by adding the **Marketing** and **Personal** security groups. This ensures that only members of those groups have access to the respective folders.
+
+  <img width="512" alt="Image" src="https://github.com/user-attachments/assets/c4ae3b41-6b13-4e9d-9bcb-9fe2e6ef6692" />
+
+  #### Screenshot 7: Mapping the Drive on UserPC
+  On Nicole’s **UserPC**, I mapped the shared folder for Marketing (`\\AD-SERVER\Marketing`) and Personal using drive letters. This allows easy and quick access to the shared drives.
+
+  <img width="521" alt="Image" src="https://github.com/user-attachments/assets/17476331-9569-4b51-84cd-6d2502aed1d2" />
+
+  #### Screenshot 8: Verified Mapped Drives
+  Nicole now has access to both shared folders. The **Personal folder is automatically renamed to "nicole"** because the share path uses `%username%` to dynamically customize access per user.
+
+  <img width="405" alt="Image" src="https://github.com/user-attachments/assets/02a09381-d189-4f8f-83fc-4d7223d422e6" />
+
+</details>
+
