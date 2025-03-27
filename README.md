@@ -110,3 +110,29 @@ This project is designed to showcase my skills in **Active Directory**, **networ
   This successfully achieves one of the primary project goals: ensuring that **UserPC** is in an internal network but can still reach the internet through the **AD Server**.
 </details>
 
+---
+
+### 🧪 Scenario-Based Active Directory Tasks
+
+<details>
+  <summary>User Account Lockout and Recovery</summary>
+
+  In this scenario, I demonstrate how to simulate and resolve an **account lockout issue** using **Group Policy** and **Active Directory Users and Computers**.
+
+  #### Step 1: Configuring Account Lockout Policy
+  I configured the **Account Lockout Policy** using the **Group Policy Management Editor**. The settings specify that after 5 invalid login attempts, the account is locked for 20 minutes, and the lockout counter resets after 15 minutes.
+
+<img width="463" alt="Image" src="https://github.com/user-attachments/assets/77164dd1-67aa-42e3-b620-fb56cc7f541f" />
+
+  #### Step 2: Lockout Triggered on Login Screen
+  I used the **John Smith** user account from the **IT_Department** OU and purposely entered the wrong password multiple times. As a result, the account was locked out, and the following message appeared on the **UserPC** login screen.
+
+  <img width="516" alt="Image" src="https://github.com/user-attachments/assets/3068545b-9d1f-48d4-be62-827fb0ca427c" />
+
+  #### Step 3: Unlocking the Account from Active Directory
+  I logged into the **AD Server**, opened **Active Directory Users and Computers**, located the `johnsmith` account, and manually unlocked it by checking the **“Unlock account”** box under the **Account tab** in the user’s properties. This restored login access for the user.
+
+<img width="462" alt="Image" src="https://github.com/user-attachments/assets/dd519920-fa56-4177-b719-31ee50b79302" />
+
+  This scenario demonstrates how **Group Policy settings can enforce security**, and how **administrators can resolve common user issues** such as account lockouts through Active Directory tools.
+</details>
