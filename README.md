@@ -185,3 +185,36 @@ This project is designed to showcase my skills in **Active Directory**, **networ
 
 </details>
 
+<details>
+  <summary>Remote Desktop Access from Domain Controller to Client Machine</summary>
+
+  #### Scenario:
+  In a job environment, it's common to help users remotely. In this task, I used **Remote Desktop Connection** from the **AD Server** to access **UserPC**, where Nicole was logged in. I did this to simulate a helpdesk support scenario where remote access is necessary to assist users. After connecting, I created a folder in Nicole’s directory to confirm successful access and support.
+
+  #### Screenshot 1: Enabling Remote Desktop on UserPC
+  This screenshot shows how I enabled **Remote Desktop access** on UserPC by allowing remote connections and permitting access from authenticated domain users.
+
+  <img width="443" alt="Image" src="https://github.com/user-attachments/assets/47798168-4ff2-432c-8807-a7f9a66fbec5" />
+
+  #### Screenshot 2: Initiating Remote Desktop Connection from AD Server
+  From the **AD Server**, I opened Remote Desktop Connection and entered **UserPC** as the computer name to begin the remote session.
+
+  <img width="380" alt="Image" src="https://github.com/user-attachments/assets/fae4c3a9-8f35-4158-9874-39b7ff214ffb" />
+
+  #### Screenshot 3: Helpdesk Signing Into UserPC Remotely
+  This screen confirms the **helpdesk domain account** successfully connected to UserPC. The system warns that another user is signed in, showing that Nicole is currently logged in.
+
+  <img width="636" alt="Image" src="https://github.com/user-attachments/assets/d775ec67-f7ab-4e26-bcc0-e7581433b9c2" />
+
+  #### Screenshot 4: User Prompt During Remote Session
+  Nicole sees a prompt asking if the helpdesk should be allowed to take over the session. This interaction confirms that remote access is working and visible to the user.
+
+  <img width="505" alt="Image" src="https://github.com/user-attachments/assets/485a6eea-a30f-487d-849b-6b66daa0db0f" />
+
+  #### Screenshot 5: Folder Created by Helpdesk
+  After connecting remotely to UserPC, I successfully created a folder in Nicole’s user directory named **"Folder-Added-By-Helpdesk"** as proof of access and the ability to perform administrative tasks.
+
+  <img width="639" alt="Image" src="https://github.com/user-attachments/assets/57a63fae-dbef-4c3d-b937-f94d5b9cd0ed" />
+
+</details>
+
